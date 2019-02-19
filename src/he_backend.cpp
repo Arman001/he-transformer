@@ -987,6 +987,12 @@ void runtime::he::HEBackend::generate_calls(
     case OP_TYPEID::Power:
     case OP_TYPEID::Product:
     case OP_TYPEID::Quantize:
+    case OP_TYPEID::QuantizedAvgPool:
+    case OP_TYPEID::QuantizedConvolution:
+    case OP_TYPEID::QuantizedConvolutionBias:
+    case OP_TYPEID::QuantizedConvolutionBiasSigneAdd:
+    case OP_TYPEID::QuantizedConvolutionRelu:
+    case OP_TYPEID::QuantizedMaxPool:
     case OP_TYPEID::Relu:
     case OP_TYPEID::ReluBackprop:
     case OP_TYPEID::ReplaceSlice:
